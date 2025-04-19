@@ -1,5 +1,6 @@
 # Final_Project_Rakamin-Data-Science-52
 Proyek ini bertujuan untuk membangun model prediktif guna membantu perusahaan mengidentifikasi karyawan yang berpotensi resign. Model terbaik dipilih berdasarkan evaluasi metrik recall, accuracy, dan precision.
+
 Model yang Digunakan:
 Logistic Regression (SMOTE + Scaling + Hypertuning + Thresholding)
 Model dipilih karena performa stabil dan generalisasi baik
