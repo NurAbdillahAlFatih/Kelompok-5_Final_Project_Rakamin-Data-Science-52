@@ -1,13 +1,23 @@
-# Final_Project_Rakamin-Data-Science-52
-Proyek ini bertujuan untuk membangun model prediktif guna membantu perusahaan mengidentifikasi karyawan yang berpotensi resign. Model terbaik dipilih berdasarkan evaluasi metrik recall, accuracy, dan precision.
+# 🔍 Resign Risk Alert System – Data Science Bootcamp Final Project
 
-Model yang Digunakan:
-Logistic Regression (SMOTE + Scaling + Hypertuning + Thresholding)
-Model dipilih karena performa stabil dan generalisasi baik
-Threshold disesuaikan untuk mencapai recall ≥ 0.70
+Proyek ini bertujuan membangun sistem prediksi risiko resign karyawan menggunakan machine learning, dengan fokus pada efisiensi alokasi biaya pelatihan dan retensi karyawan.
 
-Hasil Evaluasi Model
-Recall: 0.70
-Accuracy: 0.67
-Precision: 0.41
-Model dioptimalkan untuk recall karena fokus utama adalah menangkap sebanyak mungkin potensi resign.
+## 🎯 Objectives
+- Memprediksi probabilitas resign karyawan dari dataset HR Analytics (19.158 kandidat)
+- Menyegmentasi risiko resign (high, medium, low) untuk treatment yang tepat sasaran
+- Mengurangi turnover rate dari 28.5% ke target ideal 5–10%
+
+## 🧠 Project Summary
+- **EDA**: City Development Index & Training Hours berperan besar dalam keputusan resign.
+- **Feature Engineering**: Menambahkan variabel `estimated_salary` berdasarkan pendidikan & pengalaman.
+- **Modeling**: Logistic Regression (recall 71%) dipilih karena deteksi resign tertinggi dan tidak overfitting.
+- **Segmentation**: Berdasarkan threshold 0.45 & 0.70 untuk mengarahkan intervensi.
+- **Deployment**: Aplikasi interaktif dibangun dengan Streamlit + GitHub integration.
+
+## ⚙️ Tools & Stack
+Python • Pandas • Scikit-learn • SMOTE • Streamlit • GitHub
+
+## 📈 Impact
+- Deteksi 3.401 dari 4.790 karyawan yang berpotensi resign (71% recall)
+- Estimasi pengurangan turnover rate dari 28.5% → 7.5%
+- Strategi T&D dialokasikan ulang: 50% (high), 35% (medium), 15% (low)
